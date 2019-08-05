@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", serif;
+}
+.header {
+  background: #00334e;
+  color: #e8e8e8;
+  max-width: 100%;
+  height: 8vh;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  padding-left: 8vh;
+  padding-right: 8vh;
+}
+.header > h1 > a {
+  color: #e8e8e8;
+  text-decoration: none;
+  font-family: "Barriecito", cursive;
+  word-spacing: 2px;
+  cursor: pointer;
+}
+.header > a {
+  width: 4vh;
+  height: 4vh;
+  background: #f1f1f1;
+  padding: 7px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: 3vh;
+}
+.header > a > img {
+  width: 4vh;
+  height: 4vh;
+}
+
+.header > ul {
+  display: flex;
+  list-style-type: none;
+}
+.header > ul > li > a {
+  margin: 1vh;
+  text-decoration: none;
+  color: #e8e8e8;
+  cursor: pointer;
+}
+.listing-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* //                       footer                */
+
+.footer {
+  height: 50vh;
+  background: #00334e;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-contact {
+  width: 30%;
+  margin: 7vh 5vh 0;
+  /* margin-left: auto; */
+  color: #f1f1f1;
+}
+.footer-contact > h1 {
+  width: fit-content;
+  margin-left: auto;
+  padding-right: 10vh;
+}
+.footer-contact > ul {
+  list-style-type: none;
+  padding: 10px;
+  margin-left: auto;
+  width: fit-content;
+}
+.footer-contact > ul > li {
+  margin: 5px;
+  width: fit-content;
+  cursor: pointer;
+}
+.footer-contact > ul > li > img {
+  height: 30px;
+  width: 30px;
+  margin-right: 5px;
+}
+.footer-contact > ul > li > a {
+  text-decoration: none;
+  width: fit-content;
+  color: #eeeeee;
+}
+.footer-links {
+  width: 40%;
+  display: flex;
+  /* flex-wrap: nowrap; */
+  justify-content: space-between;
+  margin-right: auto;
+}
+.footer-links > div {
+  margin: 8vh auto 0;
+}
+.footer-links > div > h2 {
+  color: #eeeeee;
+  margin-bottom: 3vh;
+  font-family: "Ubuntu", serif;
+}
+.footer-links > div > ul {
+  list-style: none;
+  color: #e8e8e8;
+  font-family: "Ubuntu", serif;
+}
