@@ -61,7 +61,6 @@
 .footer-contact {
   width: 30%;
   margin: 7vh 5vh 0;
-  /* margin-left: auto; */
   color: #f1f1f1;
 }
 .footer-contact > h1 {
@@ -91,22 +90,37 @@
   color: #eeeeee;
 }
 .footer-links {
-  width: 40%;
+  width: 36%;
   display: flex;
-  /* flex-wrap: nowrap; */
-  justify-content: space-between;
+  justify-content: space-around;
   margin-right: auto;
+  margin-left: 15vh;
 }
 .footer-links > div {
-  margin: 8vh auto 0;
+  margin: 10vh auto 0;
 }
 .footer-links > div > h2 {
+  margin-top: 3vh;
   color: #eeeeee;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
+  cursor: pointer;
   font-family: "Ubuntu", serif;
 }
 .footer-links > div > ul {
   list-style: none;
   color: #e8e8e8;
   font-family: "Ubuntu", serif;
+}
+.footer-links > div > ul > li {
+  cursor: pointer;
+  color: #e8e8e8;
+  font-size: 14px;
+}
+
+.stepper_text > span > svg > circle {
+  color: #00334e;
+}
+
+.stepper_text > span > svg > path {
+  color: #00334e;
 }

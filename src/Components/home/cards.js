@@ -1,5 +1,5 @@
 import React from "react";
-import CARD from "./card";
+import CARD from "./cardDescription";
 
 const CARDS = props => {
   console.log(props);

@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import "./HomePage.css";
+import "./homePage.css";
 
 import Header from "../../Components/header";
-import Cards from "../../Components/home/CARDS";
-import CardInfo from "../../Components/card_info/Card_info";
-import Cart from "../../Components/cart/Cart";
+import Cards from "../../Components/home/cards";
+import CardInfo from "../../Components/card_info/cardInfo";
+import Cart from "../../Components/cart/cart";
 import Footer from "../../Components/footer";
 
 class HomePage extends Component {
@@ -22,10 +22,10 @@ class HomePage extends Component {
       "hello",
       "world",
       "how",
-
       "hello",
       "world"
-    ]
+    ],
+    cart: ["hello", "world", "how"]
   };
   onCardClick = () => {
     console.log("hello");
@@ -44,7 +44,10 @@ class HomePage extends Component {
               )}
             />
             <Route path="/cardInfo" render={() => <CardInfo />} />
-            <Route path="/cart" render={() => <Cart />} />
+            <Route
+              path="/cart"
+              render={() => <Cart data={this.state.cart} />}
+            />
             <Route render={() => <h1>not found</h1>} />
           </Switch>
           <Footer />
