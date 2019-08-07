@@ -25,7 +25,7 @@ class HomePage extends Component {
       "hello",
       "world"
     ],
-    cart: ["hello", "world", "how"]
+    cart: ["hello", "hello", "hello"]
   };
   onCardClick = () => {
     console.log("hello");

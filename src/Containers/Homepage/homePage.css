@@ -124,3 +124,76 @@
 .stepper_text > span > svg > path {
   color: #00334e;
 }
+/*                          cart items */
+.CartItems {
+  width: 90%;
+  margin: 5vh 0 10vh auto;
+  background: #eeeeee;
+  padding: 15px;
+}
+.CartItemsHeader > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.CartItemsHeader > ul > li {
+  margin: 25px 10px;
+  color: #00334e;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+.CartItemDescription {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  width: 96%;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  padding-left: 4%;
+}
+.CartItemDescription > div > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  right: 40px;
+}
+.CartItemDescription > div {
+  margin: auto 3%;
+  width: 14%;
+}
+.CartItemSlider {
+  width: 100px;
+}
+
+.CardDescriptionIcon {
+  width: 50px;
+}
+.CardDescriptionIcon > a {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+.CardDescriptionIcon > a:hover {
+  background: red;
+  color: white;
+}
+.MuiSlider-root {
+  color: #00334e !important;
+}
+
+.CartItemsFooter {
+  display: flex;
+  width: fit-content;
+  margin-right: 15%;
+  margin-left: auto;
+  padding: 20px;
+}
+.CartItemsFooter > h4 {
+  margin-left: 120px;
+  color: #00334e;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}

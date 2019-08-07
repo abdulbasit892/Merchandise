@@ -5,7 +5,7 @@ import Step from "@material-ui/core/Step";
 import StepLabel from "@material-ui/core/StepLabel";
 import Button from "@material-ui/core/Button";
 
-import Receipt from "./cartSteppers/receipt";
+import UserInformation from "./cartSteppers/userInformation";
 import Payment from "./cartSteppers/payment";
 import CartItems from "./cartSteppers/cartItems";
 
@@ -19,10 +19,6 @@ const useStyles = makeStyles(theme => ({
   },
   backButton: {
     marginRight: theme.spacing(1)
-  },
-  instructions: {
-    width: "fit-content",
-    margin: "10vh auto"
   },
   CartHeader: {
     width: "fit-content",
@@ -42,17 +38,17 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function getSteps() {
-  return ["Selected items", "Payment and Shipment", "Receipt"];
+  return ["Selected items", "User Information", "Payment and Shipment"];
 }
 
-function getStepContent(stepIndex) {
+function getStepContent(stepIndex, data) {
   switch (stepIndex) {
     case 0:
-      return <CartItems />;
+      return <CartItems data={data} />;
     case 1:
-      return <Payment />;
+      return <UserInformation />;
     case 2:
-      return <Receipt />;
+      return <Payment />;
     default:
       return "Uknown stepIndex";
   }
@@ -63,7 +59,7 @@ export default function Cart(props) {
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
 
-  function handleNext(props) {
+  function handleNext() {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
   }
 
@@ -90,7 +86,7 @@ export default function Cart(props) {
           ) : (
             <div>
               <div className={classes.instructions}>
-                {getStepContent(activeStep)}
+                {getStepContent(activeStep, props.data)}
               </div>
               <div className={classes.buttonContainer}>
                 <Button
