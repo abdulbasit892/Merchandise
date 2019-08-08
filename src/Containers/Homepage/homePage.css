@@ -124,13 +124,15 @@
 .stepper_text > span > svg > path {
   color: #00334e;
 }
-/*                          cart items */
+/*  //////////////////////////// cart items    ///////////////////////////// */
+
 .CartItems {
   width: 90%;
   margin: 5vh 0 10vh auto;
   background: #eeeeee;
   padding: 15px;
 }
+
 .CartItemsHeader > ul {
   display: flex;
   list-style: none;
@@ -153,16 +155,17 @@
   justify-content: space-around;
   padding-left: 4%;
 }
+
+.CartItemDescription > div {
+  margin: auto 3%;
+  width: 14%;
+}
 .CartItemDescription > div > img {
   width: 100px;
   height: 100px;
   border-radius: 10px;
   position: relative;
   right: 40px;
-}
-.CartItemDescription > div {
-  margin: auto 3%;
-  width: 14%;
 }
 .CartItemSlider {
   width: 100px;
@@ -196,4 +199,46 @@
   font-weight: bold;
   font-size: 20px;
   font-family: "Lato", sans-serif;
+}
+
+/* ///////////////// payment and shipment ///////////////// */
+
+.PaymentAndShipment {
+  display: flex;
+  width: 90%;
+  margin: 5vh 0 10vh auto;
+}
+
+.Shipment {
+  width: 30%;
+  margin: 0 2%;
+  background: #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
+}
+.Slip {
+  width: 62%;
+  margin: 0 2%;
+  background: #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
+}
+.Slip > div > p {
+  color: #696464;
+  margin: 10px;
+}
+.Slip > div > h1,
+.Shipment > div > h1 {
+  color: #00334e;
+  width: fit-content;
+  margin: 40px auto;
+}
+
+.Shipment > div > p {
+  margin: 5px 35px;
+  color: #696464;
+}
+.Slip > div > p > span {
+  font-weight: bold;
+  margin: 5px;
 }
